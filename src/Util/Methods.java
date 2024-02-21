@@ -9,5 +9,6 @@ public interface Methods {
     double calculateBodyMassIndex();
     double kilometersToMiles();
     double calculateTotalAmount();
+    double calculateTime();
 
 }
