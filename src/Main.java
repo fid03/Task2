@@ -1,23 +1,22 @@
 
 import Util.MathUtil;
-import Util.Methods;
+import Util.MathUtillmpl;
 
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         MathUtil mu=new MathUtil();
 
-        int res= mu.areaOfRectangle();
+        int res= mu.getRectangleArea();
         System.out.println("Area of rectangle:"+res);
 
-        double resTemp1=mu.fromCelciusToFarenheit();
+        double resTemp1=mu.calculateFromCelciusToFarenheit();
         System.out.println("From celcius to faranheit:"+resTemp1);
 
-        double averageGrade=mu.averageGradeScore();
+        double averageGrade=mu.getAverageGradeScore();
         System.out.println("Average grade score is:"+averageGrade);
 
-        double moneyConvert=mu.moneyConverter();
+        double moneyConvert=mu.convertMoney();
         System.out.println("From manat to dollar:"+moneyConvert);
 
         int resultOfSwap= mu.swapValues();
@@ -25,7 +24,7 @@ public class Main {
         double bodyMassIndex=mu.calculateBodyMassIndex();
         System.out.println("Body mass index:"+bodyMassIndex);
 
-        double fromKmToMiles=mu.kilometersToMiles();
+        double fromKmToMiles=mu.calculateKilometersToMiles();
         System.out.println("Distance from km to miles:"+fromKmToMiles);
 
         double fromMilesToKilometers=mu.fromMilesToKilometers();
