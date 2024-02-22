@@ -1,7 +1,7 @@
 package Util;
 
-public class MathUtil implements Methods {
-    public int areaOfRectangle() {
+public class MathUtil implements MathUtillmpl {
+    public int getRectangleArea() {
 
         int length = (int)InputUtil.requireNumber("Enter length of rectangle");
         int width =(int)InputUtil.requireNumber("Enter width of rectangle");
@@ -9,14 +9,14 @@ public class MathUtil implements Methods {
         return area;
     }
 
-    public  double fromCelciusToFarenheit() {
+    public  double calculateFromCelciusToFarenheit() {
 
         double celcius =InputUtil.requireNumber("Enter temperature in celcius");
         double fromCelciustoFarenheit = (celcius * (9 / 5) + 32);
         return fromCelciustoFarenheit;
     }
 
-    public  double averageGradeScore() {
+    public  double getAverageGradeScore() {
         int sc1 = (int) InputUtil.requireNumber("Enter 1st grade score");
         int sc2=(int)InputUtil.requireNumber("Enter 2nd grade score");
         int sc3=(int)InputUtil.requireNumber("Enter 3rd grade score");
@@ -24,7 +24,7 @@ public class MathUtil implements Methods {
         return average;
     }
 
-    public double moneyConverter(){
+    public double convertMoney(){
         double amount=InputUtil.requireNumber("Enter amount");
         double convertedAmount=amount*1.7;
         return convertedAmount;
@@ -47,7 +47,7 @@ public class MathUtil implements Methods {
        double bmi=(weight/Math.pow(height,2));
        return bmi;
     }
-    public double kilometersToMiles(){
+    public double calculateKilometersToMiles(){
         double km=InputUtil.requireNumber("Enter distance in km");
         double fromKmToMiles=km/1.6;
         return fromKmToMiles;
